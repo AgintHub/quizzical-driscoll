@@ -1,6 +1,6 @@
 dag_type: plain_text
-description: Create a daily schedule for a stay-at-home mom with a 6-year-old and
-  a 1-year-old requiring extra care and education.
+description: This workflow generates a daily schedule for a stay-at-home mom of two
+  children, ages 6 and 1, to manage their needs, activities, and self-care.
 name: schedule_design_for_mom_of_two
 nodes:
   create_bedtime_routine:
@@ -10,7 +10,8 @@ nodes:
     name: create_bedtime_routine
     nodes_depended_on:
     - schedule_meals_and_snacks
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - finalize_daily_schedule
     prompt: Develop a calming and predictable bedtime routine for both children, including
       bathing, reading, and sleep preparation.
   define_daily_objectives:
@@ -19,7 +20,8 @@ nodes:
       and enjoyment.
     name: define_daily_objectives
     nodes_depended_on: []
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - map_child_needs_to_time_slots
     prompt: Create a list of daily objectives for the 6-year-old and the 1-year-old,
       including learning outcomes, self-care activities, and fun tasks.
   establish_home_boundaries:
@@ -28,7 +30,8 @@ nodes:
       development for both children.
     name: establish_home_boundaries
     nodes_depended_on: []
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - finalize_daily_schedule
     prompt: Define and set clear household rules, boundaries, and expectations for
       both children to understand their roles and responsibilities.
   finalize_daily_schedule:
@@ -38,12 +41,13 @@ nodes:
       slots for personal development and self-care.
     name: finalize_daily_schedule
     nodes_depended_on:
-    - schedule_parent_self-care
+    - organize_childhood_activities
     - establish_home_boundaries
     - create_bedtime_routine
-    - organize_childhood_activities
     - schedule_meals_and_snacks
-    nodes_dependent_on: []
+    - schedule_parent_self-care
+    nodes_dependent_on:
+    - review_and_adjust_schedule
     prompt: Consolidate the individual schedule pieces into a single, cohesive visual
       representation of the daily routine.
   map_child_needs_to_time_slots:
@@ -53,7 +57,9 @@ nodes:
     name: map_child_needs_to_time_slots
     nodes_depended_on:
     - define_daily_objectives
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - organize_childhood_activities
+    - schedule_meals_and_snacks
     prompt: Assign specific time slots to each child's needs and objectives, using
       a table with hours of the day as columns.
   organize_childhood_activities:
@@ -63,7 +69,8 @@ nodes:
     name: organize_childhood_activities
     nodes_depended_on:
     - map_child_needs_to_time_slots
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - finalize_daily_schedule
     prompt: List age-appropriate activities and plan for daily engagement and playtime
       for both the 6-year-old and the 1-year-old.
   review_and_adjust_schedule:
@@ -83,7 +90,9 @@ nodes:
     name: schedule_meals_and_snacks
     nodes_depended_on:
     - map_child_needs_to_time_slots
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - create_bedtime_routine
+    - finalize_daily_schedule
     prompt: List meal and snack times and plan healthy meals considering dietary restrictions
       for both children and any adults in the household.
   schedule_parent_self-care:
@@ -92,6 +101,7 @@ nodes:
       and socialization for the stay-at-home mom, acknowledging her own needs.
     name: schedule_parent_self-care
     nodes_depended_on: []
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - finalize_daily_schedule
     prompt: List activities and time slots for parent self-care, prioritizing exercise,
       friendship, relaxation, and learning.
