@@ -1,7 +1,6 @@
 dag_type: plain_text
-description: Create a daily schedule for a stay-at-home mom with a 6-year-old and
-  a 1-year-old requiring extra care and education.
-name: schedule_design_for_mom_of_two
+description: Generated workflow from UI.
+name: Generated Workflow from UI
 nodes:
   create_bedtime_routine:
     agent: false
@@ -38,11 +37,11 @@ nodes:
       slots for personal development and self-care.
     name: finalize_daily_schedule
     nodes_depended_on:
-    - schedule_parent_self-care
+    - organize_childhood_activities
     - establish_home_boundaries
     - create_bedtime_routine
-    - organize_childhood_activities
     - schedule_meals_and_snacks
+    - schedule_parent_self-care
     nodes_dependent_on: []
     prompt: Consolidate the individual schedule pieces into a single, cohesive visual
       representation of the daily routine.
