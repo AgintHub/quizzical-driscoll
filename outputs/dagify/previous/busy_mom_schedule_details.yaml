@@ -81,7 +81,7 @@ nodes:
     nodes_depended_on:
     - determine_childcare_needs
     nodes_dependent_on:
-    - plan_activities_for_children
     - create_mom_selfcare_schedule
+    - plan_activities_for_children
     - integrate_schedules
     prompt: Create a schedule for childcare that meets the determined needs.

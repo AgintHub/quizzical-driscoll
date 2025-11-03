@@ -1,6 +1,7 @@
 dag_type: plain_text
-description: Generated workflow from UI.
-name: busy_mom_schedule
+description: Executes the family scheduling workflow, producing an integrated family
+  schedule for a busy mom and her children.
+name: busy_mom_schedule_execution
 nodes:
   create_meal_plan:
     agent: false
@@ -32,6 +33,15 @@ nodes:
     - schedule_childcare
     prompt: Based on the daily routines, determine the childcare needs for the 1 and
       6-year-old children.
+  execute_workflow:
+    agent: false
+    description: Execute the completed family schedule workflow
+    name: execute_workflow
+    nodes_depended_on:
+    - review_and_adjust_schedule
+    nodes_dependent_on: []
+    prompt: Run the previously completed family schedule plan and provide the final
+      integrated schedule.
   identify_family_routines:
     agent: false
     description: Identify daily routines for the family
@@ -71,7 +81,8 @@ nodes:
     name: review_and_adjust_schedule
     nodes_depended_on:
     - integrate_schedules
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - execute_workflow
     prompt: Review the integrated family schedule and make adjustments as necessary
       to ensure it meets the family's needs.
   schedule_childcare:
@@ -81,7 +92,7 @@ nodes:
     nodes_depended_on:
     - determine_childcare_needs
     nodes_dependent_on:
-    - create_mom_selfcare_schedule
     - plan_activities_for_children
+    - create_mom_selfcare_schedule
     - integrate_schedules
     prompt: Create a schedule for childcare that meets the determined needs.
