@@ -1,56 +1,50 @@
 {
-  "create_bedtime_routine": {
+  "compile_daily_schedule": {
     "output": {
-      "output": "Develop a bedtime routine that begins with a warm bath for both children at 7:00 PM, followed by reading a soothing book from 7:30-8:15 PM, and finally wind down with relaxing techniques from 8:30-9:00 PM to ensure a smooth bedtime for both children."
+      "output": "Here is a comprehensive daily schedule for the busy mom:\n\n- 7:00 AM: Wake up, Morning routine\n- 7:30 AM: Breakfast with the kids\n- 8:00 AM: Get the 6-year-old ready for school, Playtime with the 1-year-old\n- 9:00 AM: School (6-year-old), Morning play/Nap time (1-year-old), Mom's work block (1 hour)\n- 10:00 AM: Laundry (1 hour), Mom's break\n- 11:00 AM: Mom's work block (1.5 hours)\n- 12:30 PM: Lunch with the kids\n- 1:00 PM: Work/School pick-up, Nap time (1-year-old), Mom's work block (2 hours)\n- 3:00 PM: Snack time with the kids\n- 3:30 PM: Self-care time (30 minutes) - Relaxation/Reading\n- 4:00 PM: Chores with the 6-year-old, Playtime with the 1-year-old, Cleaning (30 minutes)\n- 5:00 PM: Exercise time (30 minutes) - Mom's walk/Jog, Meal preparation (1 hour)\n- 6:00 PM: Dinner with the family\n- 7:00 PM: Evening activities with the kids\n- 8:00 PM: Hobby time (60 minutes) - Mom's painting/Creative time\n- 9:00 PM: Begin winding down\n- 9:30 PM: Bedtime"
     },
-    "description": "Estimate and schedule the timing for wind-down activities, relaxation techniques, and sleep preparation to ensure a smooth bedtime for both children."
+    "description": "Compile the daily schedule for the busy mom"
   },
-  "define_daily_objectives": {
+  "create_self_care_time": {
     "output": {
-      "output": "For the 6-year-old:\n1. Develop writing skills\n2. Improve math problem-solving\n3. Enhance reading comprehension\n4. Increase physical activity\n5. Practice social skills\n6. Engage in creative arts\n\nFor the 1-year-old:\n1. Learn to point and name body parts\n2. Develop fine motor skills through play\n3. Enhance language skills through babbling and gestures\n4. Practice taking turns and sharing\n5. Engage in sensory play with textures and colors\n6. Establish a daily routine with naps and meal times"
+      "output": "Here is a revised daily schedule with self-care time for the mom:\n\n- 7:00 AM: Wake up, Morning routine\n- 7:30 AM: Breakfast with the kids\n- 8:00 AM: Get the 6-year-old ready for school, Playtime with the 1-year-old\n- 9:00 AM: School (6-year-old), Morning play/Nap time (1-year-old), Mom's work block (1 hour)\n- 10:00 AM: Break, household chores\n- 10:30 AM: Mom's work block (1.5 hours)\n- 12:00 PM: Lunch with the kids\n- 1:00 PM: Work/School pick-up, Nap time (1-year-old), Mom's work block (2 hours)\n- 3:00 PM: Snack time with the kids\n- 3:30 PM: Self-care time (30 minutes) - Relaxation/Reading\n- 4:00 PM: Chores with the 6-year-old, Playtime with the 1-year-old\n- 5:00 PM: Exercise time (30 minutes) - Mom's walk/Jog\n- 5:30 PM: Dinner preparation\n- 6:00 PM: Dinner with the family\n- 7:00 PM: Evening activities with the kids\n- 8:00 PM: Hobby time (60 minutes) - Mom's painting/Creative time\n- 9:00 PM: Begin winding down\n- 9:30 PM: Bedtime"
     },
-    "description": "List the top priorities for both children's daily development, education, and enjoyment."
+    "description": "Schedule time for the mom's self-care"
   },
-  "establish_home_boundaries": {
+  "determine_childrens_schedule": {
     "output": {
-      "output": "Established clear household rules, boundaries, and expectations outlining the roles and responsibilities of both children."
+      "output": "Here is a daily schedule for the 1-year-old and 6-year-old:\n\n- 7:00 AM: Wake up\n- 7:30 AM: Breakfast\n- 8:00 AM: Get ready for school (6-year-old), Playtime (1-year-old)\n- 9:00 AM: School (6-year-old), Morning play/Nap time (1-year-old)\n- 12:00 PM: Lunch\n- 1:00 PM: Work/School pick-up, Nap time (1-year-old)\n- 3:00 PM: Snack time\n- 4:00 PM: Chores (e.g., feeding pets, helping with laundry) (6-year-old), Playtime (1-year-old)\n- 5:00 PM: Dinner preparation\n- 6:00 PM: Dinner\n- 7:00 PM: Evening activities (e.g., homework, reading) (6-year-old), Playtime (1-year-old)\n- 8:30 PM: Begin winding down (e.g., bath time)\n- 9:30 PM: Bedtime"
     },
-    "description": "Establish routines for behavior management, limit-setting, and empathy development for both children."
+    "description": "Determine the daily schedule for the children"
   },
-  "finalize_daily_schedule": {
+  "identify_daily_routines": {
     "output": {
-      "output": "A visual representation of the daily routine for the stay-at-home mom and her children has been created, incorporating the morning, lunch break, and afternoon routines, and ensuring adequate time for rest, relaxation, and motor skill development, as well as a detailed schedule for the 6-year-old and 1-year-old, including activities such as writing skills, math problem-solving, reading comprehension, physical activity, social skills, creative arts, body parts, fine motor skills, language skills, taking turns and sharing, sensory play, and daily routine. The schedule also includes a bedtime routine for both children. Additionally, the parent's self-care activities have been integrated into the daily schedule to ensure balanced personal and family time."
+      "output": "Here is a list of daily routines that need to be included in the schedule for a busy mom with two young children:\n\n- 7:00 AM: Wake up\n- 7:30 AM: Breakfast\n- 8:00 AM: Get ready for school\n- 9:00 AM: School\n- 12:00 PM: Lunch\n- 1:00 PM: Work/School pick-up\n- 3:00 PM: Snack time\n- 4:00 PM: Chores (e.g., feeding pets, helping with laundry)\n- 5:00 PM: Dinner preparation\n- 6:00 PM: Dinner\n- 7:00 PM: Evening activities (e.g., homework, reading)\n- 8:30 PM: Begin winding down (e.g., bath time)\n- 9:30 PM: Bedtime"
     },
-    "description": "Visualize and commit to a daily schedule for the stay-at-home mom that meets all her responsibilities and her children's needs, including time slots for personal development and self-care."
+    "description": "List the daily routines that need to be included in the schedule"
   },
-  "map_child_needs_to_time_slots": {
+  "plan_meals_and_snacks": {
     "output": {
-      "output": "Time Allocations:\n\n**For the 6-year-old:\n**\n1. **Writing Skills:** 1 hour (8:00-9:00 AM)\n2. **Math Problem-Solving:** 45 minutes (9:00-9:45 AM)\n3. **Reading Comprehension:** 30 minutes (9:45-10:15 AM)\n4. **Physical Activity:** 1 hour (10:15-11:15 AM)\n5. **Social Skills:** 30 minutes (11:15-11:45 AM)\n6. **Creative Arts:** 45 minutes (11:45 AM-12:30 PM)\n\n**For the 1-year-old:\n**\n1. **Body Parts:** 15 minutes (8:00-8:15 AM)\n2. **Fine Motor Skills:** 30 minutes (8:15-8:45 AM)\n3. **Language Skills:** 30 minutes (8:45-9:15 AM)\n4. **Taking Turns and Sharing:** 15 minutes (9:15-9:30 AM)\n5. **Sensory Play:** 45 minutes (9:30-10:15 AM)\n6. **Daily Routine:** 1 hour (10:15-11:15 AM)\n"
+      "output": "Healthy Meal Plan for the Family:\n\n- Breakfast: Overnight oats with fruits and nuts (15 minutes to prepare)\n- Lunch: Grilled chicken sandwiches with carrot sticks and hummus (30 minutes to prepare)\n- Dinner: Quinoa and vegetable stir-fry with lean beef (45 minutes to prepare)\n- Snacks: Fresh fruits, yogurt, and cheese cubes\n\nConsidering the household chores schedule, meal preparation is allocated at 5:00 PM for 1 hour. This meal plan can be prepared within the scheduled time and ensures healthy options for the family."
     },
-    "description": "Categorize and schedule time allocations for work, home chores, nap times, meals, and activities per day, taking into account both children's needs."
+    "description": "Plan healthy meals and snacks for the family"
   },
-  "organize_childhood_activities": {
+  "plan_moms_work_schedule": {
     "output": {
-      "output": "A daily schedule for the stay-at-home mom and her children has been planned.\n\n**Morning Routine (8:00-9:00 AM)**\n- Both children will follow their respective daily routines.\n\n**6-year-old's Schedule (9:00 AM-12:00 PM)**\n1. Writing Skills: 45 minutes (9:00-9:45 AM) + 15 minutes (11:45 AM-12:00 PM)\n2. Math Problem-Solving: 30 minutes (9:45-10:15 AM) + 15 minutes (11:00-11:15 AM)\n3. Reading Comprehension: 45 minutes (10:15-11:00 AM) + 15 minutes (11:15-11:30 AM)\n4. Physical Activity: 45 minutes (11:00-11:45 AM)\n5. Social Skills: 30 minutes (11:45 AM-12:15 PM)\n6. Creative Arts: 45 minutes (12:15-1:00 PM)\n\n**1-year-old's Schedule (9:00 AM-12:00 PM)**\n1. Body Parts: 15 minutes (9:00-9:15 AM) + 15 minutes (11:15-11:30 AM)\n2. Fine Motor Skills: 45 minutes (9:15-10:00 AM) + 15 minutes (11:00-11:15 AM)\n3. Language Skills: 45 minutes (10:00-10:45 AM) + 15 minutes (11:30 AM-11:45 AM)\n4. Taking Turns and Sharing: 30 minutes (10:45-11:15 AM) + 15 minutes (11:45 AM-12:00 PM)\n5. Sensory Play: 30 minutes (11:15-11:45 AM) + 15 minutes (11:30 AM-11:45 AM)\n6. Daily Routine: 1 hour (12:00-1:00 PM)\n\n**Lunch Break (12:00-1:00 PM)**\n\n**Afternoon Routine (1:00-3:00 PM)**\n- Both children will have dedicated time for rest, relaxation, and motor skill development.\n"
+      "output": "Here is a daily work schedule for the mom that takes into account the children's schedule:\n\n- 7:00 AM: Wake up, Morning routine\n- 7:30 AM: Breakfast with the kids\n- 8:00 AM: Get the 6-year-old ready for school, Playtime with the 1-year-old\n- 9:00 AM: School (6-year-old), Morning play/Nap time (1-year-old), Mom's work block (1 hour)\n- 10:00 AM: Break, household chores\n- 10:30 AM: Mom's work block (1.5 hours)\n- 12:00 PM: Lunch with the kids\n- 1:00 PM: Work/School pick-up, Nap time (1-year-old), Mom's work block (2 hours)\n- 3:00 PM: Snack time with the kids\n- 3:30 PM: Break, self-care time\n- 4:00 PM: Chores with the 6-year-old, Playtime with the 1-year-old\n- 5:00 PM: Dinner preparation\n- 6:00 PM: Dinner with the family\n- 7:00 PM: Evening activities with the kids\n- 8:30 PM: Begin winding down\n- 9:30 PM: Bedtime"
     },
-    "description": "Organize and schedule activities like art projects, storytelling, sing-alongs, and motor skill development for both children."
+    "description": "Plan the mom's work schedule around the children's needs"
   },
   "review_and_adjust_schedule": {
     "output": {
-      "output": "The parent has regularly evaluated the effectiveness of the daily schedule, incorporating child feedback and making adjustments as necessary to ensure a balanced routine that meets the needs of all household members."
+      "output": "Here is the reviewed and adjusted daily schedule for the busy mom:\n\n- 7:00 AM: Wake up, Morning routine\n- 7:30 AM: Breakfast with the kids\n- 8:00 AM: Get the 6-year-old ready for school, Playtime with the 1-year-old\n- 9:00 AM: School (6-year-old), Morning play/Nap time (1-year-old), Mom's work block (1 hour)\n- 10:00 AM: Laundry (1 hour), Mom's break\n- 11:00 AM: Mom's work block (1.5 hours)\n- 12:30 PM: Lunch with the kids\n- 1:00 PM: Work/School pick-up, Nap time (1-year-old), Mom's work block (2 hours)\n- 3:00 PM: Snack time with the kids\n- 3:30 PM: Self-care time (30 minutes) - Relaxation/Reading\n- 4:00 PM: Chores with the 6-year-old, Playtime with the 1-year-old, Cleaning (30 minutes)\n- 5:00 PM: Exercise time (30 minutes) - Mom's walk/Jog, Meal preparation (1 hour)\n- 6:00 PM: Dinner with the family\n- 7:00 PM: Evening activities with the kids\n- 8:00 PM: Hobby time (60 minutes) - Mom's painting/Creative time\n- 9:00 PM: Begin winding down\n- 9:30 PM: Bedtime\n\nNo adjustments needed, the schedule appears to be realistic and workable."
     },
-    "description": "Monitor and revise the schedule as required, ensuring it remains useful and beneficial for the well-being of all household members."
+    "description": "Review and adjust the daily schedule as needed"
   },
-  "schedule_meals_and_snacks": {
+  "schedule_household_chores": {
     "output": {
-      "output": "Daily Meal Schedule for Children and Meal Prep Plans:\n\n**For the 6-year-old:\n**\nBreakfast: 8:00-9:00 AM (with healthy snacks 10:15-11:15 AM and 2:00-3:00 PM)\nLunch: 12:00-1:00 PM (with healthy snacks 3:00-4:00 PM and 5:00-6:00 PM)\nDinner: 6:00-7:00 PM\n\n**Snacks:**\n1. Fresh fruits at 10:15 AM and 3:00 PM\n2. Carrot sticks with hummus at 4:00 PM\n\n**For the 1-year-old:\n**\nBreakfast: 8:00-8:45 AM (with healthy snacks 9:00-9:45 AM and 11:15 AM-12:00 PM)\nLunch: 12:00-1:00 PM\nDinner: 6:00-7:00 PM\n\n**Snacks:**\n1. Puffed snacks at 9:00 AM\n2. Yogurt at 11:15 AM-12:00 PM"
+      "output": "Household Chores Schedule:\n\n- 10:00 AM: Laundry (1 hour)\n- 4:00 PM: Cleaning (30 minutes) with the 6-year-old\n- 5:00 PM: Meal preparation (1 hour)\n\nNote: Adjust the duration of chores as needed to fit within the available time slots."
     },
-    "description": "Create a daily meal schedule for the children and make arrangements for meal prep, cooking, and clean-up."
-  },
-  "schedule_parent_self-care": {
-    "output": {
-      "output": "{parent self-care activities: Exercise (30 minutes, 3 times a week), Morning meditation (15 minutes, daily), Social connections with friends (2 hours, weekly), Learning a new skill (2 hours, weekly, e.g., photography, language, or creative writing).}"
-    },
-    "description": "Schedule and commit to personal development, skill-building activities, and socialization for the stay-at-home mom, acknowledging her own needs."
+    "description": "Schedule household chores and responsibilities"
   }
 }

@@ -1,7 +1,6 @@
 dag_type: plain_text
-description: Create a daily schedule for a busy mom raising two young children ages
-  1 and 6 years old
-name: schedule_for_busy_mom
+description: Generated workflow from UI.
+name: Generated Workflow from UI
 nodes:
   compile_daily_schedule:
     agent: false
