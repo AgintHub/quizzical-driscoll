@@ -1,6 +1,5 @@
 dag_type: plain_text
-description: A workflow to design a schedule for a busy mom raising 2 young children
-  ages 1 and 6 years old
+description: Generated workflow from UI.
 name: busy_mom_schedule
 nodes:
   create_meal_plan:
@@ -9,7 +8,8 @@ nodes:
     name: create_meal_plan
     nodes_depended_on:
     - identify_family_routines
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - integrate_schedules
     prompt: Develop a meal plan that accommodates the family's daily routines and
       dietary needs.
   create_mom_selfcare_schedule:
@@ -18,7 +18,8 @@ nodes:
     name: create_mom_selfcare_schedule
     nodes_depended_on:
     - schedule_childcare
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - integrate_schedules
     prompt: Develop a self-care schedule for the mom that fits around the childcare
       schedule.
   determine_childcare_needs:
@@ -27,7 +28,8 @@ nodes:
     name: determine_childcare_needs
     nodes_depended_on:
     - identify_family_routines
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - schedule_childcare
     prompt: Based on the daily routines, determine the childcare needs for the 1 and
       6-year-old children.
   identify_family_routines:
@@ -35,7 +37,9 @@ nodes:
     description: Identify daily routines for the family
     name: identify_family_routines
     nodes_depended_on: []
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - determine_childcare_needs
+    - create_meal_plan
     prompt: List the daily routines that need to be accommodated for a family with
       2 young children ages 1 and 6.
   integrate_schedules:
@@ -47,7 +51,8 @@ nodes:
     - schedule_childcare
     - plan_activities_for_children
     - create_mom_selfcare_schedule
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - review_and_adjust_schedule
     prompt: Combine the meal plan, childcare schedule, activities for children, and
       mom's self-care schedule into a single, cohesive family schedule.
   plan_activities_for_children:
@@ -56,7 +61,8 @@ nodes:
     name: plan_activities_for_children
     nodes_depended_on:
     - schedule_childcare
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - integrate_schedules
     prompt: Plan activities for the 1 and 6-year-old children during their scheduled
       childcare times.
   review_and_adjust_schedule:
@@ -74,5 +80,8 @@ nodes:
     name: schedule_childcare
     nodes_depended_on:
     - determine_childcare_needs
-    nodes_dependent_on: []
+    nodes_dependent_on:
+    - plan_activities_for_children
+    - create_mom_selfcare_schedule
+    - integrate_schedules
     prompt: Create a schedule for childcare that meets the determined needs.
