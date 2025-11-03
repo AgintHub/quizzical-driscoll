@@ -1,80 +1,89 @@
 dag_type: plain_text
-description: Generated workflow from UI.
-name: Generated Workflow from UI
+description: A workflow to design a schedule for a busy mom raising two young children
+  ages 1 and 6 years old.
+name: busy_mom_schedule_design
 nodes:
-  compile_daily_schedule:
+  create_daily_schedule_template:
     agent: false
-    description: Compile the daily schedule for the busy mom
-    name: compile_daily_schedule
+    description: Create a basic daily schedule template.
+    name: create_daily_schedule_template
     nodes_depended_on:
-    - determine_childrens_schedule
-    - plan_moms_work_schedule
-    - schedule_household_chores
-    - plan_meals_and_snacks
-    - create_self_care_time
+    - identify_family_routines
     nodes_dependent_on: []
-    prompt: Combine the schedules for the children, mom's work, household chores,
-      meals, and self-care into a comprehensive daily schedule.
-  create_self_care_time:
+    prompt: Create a basic daily schedule template that includes time slots for meals,
+      sleep, and activities for the family.
+  determine_childcare_needs:
     agent: false
-    description: Schedule time for the mom's self-care
-    name: create_self_care_time
+    description: Assess the childcare needs for the children.
+    name: determine_childcare_needs
     nodes_depended_on:
-    - plan_moms_work_schedule
+    - identify_family_routines
     nodes_dependent_on: []
-    prompt: Schedule time for the mom's self-care, including exercise, relaxation,
-      and hobbies, that fits around her work schedule and family responsibilities.
-  determine_childrens_schedule:
+    prompt: Based on the family routines, assess the childcare needs for the children,
+      including the need for daycare, babysitting, or other care arrangements.
+  finalize_daily_schedule:
     agent: false
-    description: Determine the daily schedule for the children
-    name: determine_childrens_schedule
+    description: Finalize the daily schedule for the family.
+    name: finalize_daily_schedule
     nodes_depended_on:
-    - identify_daily_routines
+    - plan_morning_routine
+    - plan_afternoon_routine
+    - plan_evening_routine
+    - integrate_childcare_arrangements
     nodes_dependent_on: []
-    prompt: Create a daily schedule for the 1-year-old and 6-year-old, including times
-      for waking up, meals, naps, school, and bedtime.
-  identify_daily_routines:
+    prompt: Combine the morning, afternoon, and evening routines, along with childcare
+      arrangements, into a comprehensive daily schedule for the family.
+  identify_family_routines:
     agent: false
-    description: List the daily routines that need to be included in the schedule
-    name: identify_daily_routines
+    description: List the daily routines and activities for the family.
+    name: identify_family_routines
     nodes_depended_on: []
     nodes_dependent_on: []
-    prompt: List the daily routines for a busy mom with two young children, such as
-      waking up, breakfast, school, work, chores, and bedtime.
-  plan_meals_and_snacks:
+    prompt: List the daily routines and activities for a family with two young children
+      ages 1 and 6, including meal times, sleep schedules, and regular activities.
+  integrate_childcare_arrangements:
     agent: false
-    description: Plan healthy meals and snacks for the family
-    name: plan_meals_and_snacks
+    description: Integrate childcare arrangements into the daily schedule.
+    name: integrate_childcare_arrangements
     nodes_depended_on:
-    - schedule_household_chores
+    - determine_childcare_needs
+    - plan_afternoon_routine
     nodes_dependent_on: []
-    prompt: Create a meal plan for the family, including breakfast, lunch, dinner,
-      and snacks, that is healthy and can be prepared within the scheduled time.
-  plan_moms_work_schedule:
+    prompt: Integrate the assessed childcare needs into the afternoon routine, including
+      daycare or babysitting arrangements.
+  plan_afternoon_routine:
     agent: false
-    description: Plan the mom's work schedule around the children's needs
-    name: plan_moms_work_schedule
+    description: Plan the afternoon routine for the family.
+    name: plan_afternoon_routine
     nodes_depended_on:
-    - determine_childrens_schedule
+    - create_daily_schedule_template
     nodes_dependent_on: []
-    prompt: Create a daily work schedule for the mom that takes into account the children's
-      schedule, including times for work, breaks, and self-care.
+    prompt: Using the daily schedule template, plan an afternoon routine that includes
+      lunch, activities, and childcare arrangements.
+  plan_evening_routine:
+    agent: false
+    description: Plan the evening routine for the family.
+    name: plan_evening_routine
+    nodes_depended_on:
+    - create_daily_schedule_template
+    nodes_dependent_on: []
+    prompt: Using the daily schedule template, plan an evening routine that includes
+      dinner, relaxation, and bedtime preparations.
+  plan_morning_routine:
+    agent: false
+    description: Plan the morning routine for the family.
+    name: plan_morning_routine
+    nodes_depended_on:
+    - create_daily_schedule_template
+    nodes_dependent_on: []
+    prompt: Using the daily schedule template, plan a morning routine that includes
+      waking up, breakfast, and getting ready for the day.
   review_and_adjust_schedule:
     agent: false
-    description: Review and adjust the daily schedule as needed
+    description: Review and adjust the daily schedule as needed.
     name: review_and_adjust_schedule
     nodes_depended_on:
-    - compile_daily_schedule
+    - finalize_daily_schedule
     nodes_dependent_on: []
-    prompt: Review the daily schedule for feasibility and make any necessary adjustments
-      to ensure it is realistic and workable.
-  schedule_household_chores:
-    agent: false
-    description: Schedule household chores and responsibilities
-    name: schedule_household_chores
-    nodes_depended_on:
-    - plan_moms_work_schedule
-    nodes_dependent_on: []
-    prompt: Create a schedule for household chores, including laundry, cleaning, and
-      meal preparation, that fits around the mom's work schedule and the children's
-      needs.
+    prompt: Review the finalized daily schedule for feasibility and make adjustments
+      as necessary to ensure it meets the family's needs.
